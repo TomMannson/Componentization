@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+          android:title="Home"
+          android:icon="@android:drawable/ic_input_get" />
+    <item android:id="@+id/myPayments"
+          android:title="My payments"
+          android:icon="@android:drawable/ic_input_get" />
+    <item android:id="@+id/upcoming"
+          android:title="Upcoming paiments"
+          android:icon="@android:drawable/ic_input_get" />
+</menu>

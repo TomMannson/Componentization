@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_nav"
+            app:startDestination="@id/home">
+
+    <fragment
+            android:id="@+id/home"
+            android:name="com.tommannson.apps.mvitodo.screens.home.HomeScreenFragment"
+    />
+
+    <fragment
+            android:id="@+id/myPayments"
+            android:name="com.tommannson.apps.paymenow.screens.myPayments.MyPaymentsFragment"
+    >
+        <action android:id="@+id/action_myPayments_to_createPaymentFragment"
+                app:destination="@id/createPaymentFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/upcoming"
+            android:name="com.tommannson.apps.paymenow.screens.upcoming.UpcomingPaymentsFragment"
+    />
+    <fragment android:id="@+id/createPaymentFragment"
+              android:name="com.tommannson.apps.paymenow.screens.myPayments.create.CreatePaymentFragment"
+              android:label="CreatePaymentFragment"/>
+
+
+</navigation>
